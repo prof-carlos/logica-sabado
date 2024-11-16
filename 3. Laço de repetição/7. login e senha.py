@@ -7,6 +7,14 @@ login_cadastrado = "marta"
 senha_cadastrada = "123"
 tentativas = 0
 
+def verificar_login_e_senha(login, senha, tentativas):
+    if login == login_cadastrado and senha == senha_cadastrada and tentativas < 3:
+        resultado = True
+    else:
+        resultado = False
+    
+    return resultado
+
 # Entrada
 while True:
     login = input("\nDigite seu login: ")
@@ -14,7 +22,7 @@ while True:
     tentativas += 1
 
     # Processamento
-    if login == login_cadastrado and senha == senha_cadastrada:
+    if verificar_login_e_senha(login, senha, tentativas):
         print("Acesso ao sistema!")
         break
     
