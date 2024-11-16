@@ -3,7 +3,7 @@
 ### Comandos básicos:
 
 Preparar/selecionar arquivos para commit.
-```
+``` 
 git add .
 ```
 
