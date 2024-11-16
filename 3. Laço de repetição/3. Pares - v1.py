@@ -2,5 +2,5 @@ import os
 
 os.system("cls || clear")
 
-for i in range(10, 21, 2):
+for i in range(1, 16, 2):
     print(i)
